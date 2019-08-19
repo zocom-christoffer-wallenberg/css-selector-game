@@ -1,8 +1,33 @@
-<p>You can use a comma to specify multiple criteria for a selection. For
-  instance, <code>p, #foo</code> will select all the <code>&lt;p&gt;</code>
-  elements on a page <em>and</em> the element with id <code>foo</code>.</p>
+<p>Arv är en viktigt princip i CSS. Ett element som ligger inuti ett annat element är barn till det omslutna
+  föräldralementet
+  (eng. parent/child).
+  Ett barn ärver förälderns egenskaper. Här är länkarna (<code>&lt;a&gt</code>-elementen) barn till varje listelement
+  <code>&lt;li&gt</code>
+  . På samma sätt som <code>&lt;ul&gt</code>-elementet är förälder till <code>&lt;li&gt</code>-elementen.
+</p>
+<code>&lt;ul&gt;
+  &lt;li&gt; &lt;a href="#"&gt;Länk 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt; &lt;a href="#"&gt;Länk 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt; &lt;a href="#"&gt;Länk 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;</code>
+</code>
+<p><strong>Arvselektorn</strong> låter oss vara specifika och endast välja element som "bor" inuti ett annat. Vill du
+  endast styla länkar som ligger i ett listelement anger du selektorn
+  <code>li a</code>. Till skillnad från att skriva selektorn <code>a</code> som väljer alla länkar på sidan.</p>
 
+<p>Vill du vara ännu mer specifik att det endast gäller länkar i oordnade listor skriver du <code>ul li a</code>. Det
+  enda
+  viktiga är att du behåller ett mellanrum emellan! </p>
+
+<p>Använd nu arvselektorn för att välja rätt textstycke!</p>
 --
-<p>select me</p>
-<em id="bop">and me</em>
-<em>but not me</em>
+
+<header>
+  <p>Välj mig!!</p>
+</header>
+<main>
+  <p>Välj inte mig</p>
+</main>
+<footer>
+  <p>Välj inte mig</p>
+</footer>

@@ -1,4 +1,4 @@
 {
-  "keys": ["."],
-  "selector": ".lol.wut"
+  "keys": ["#"],
+  "selector": "#me"
 }

@@ -1,0 +1,30 @@
+<p>Om man vill vara mer specifik än arvselektorn kan man välja endast "direkta barn"
+    (childselector)</strong>. Antag att du vill välja endast textstycke 1 och 2,
+    men inte 3. Med <strong>barnselektorn (childselector)</strong> skriver du i så fall <code>main > p</code>
+</p>
+
+<code>
+    &lt;main&gt;
+    &lt;p>Textstycke 1 - barn till main&lt;/p&gt;
+    &lt;p>Textstycke 2 - barn till main&lt;/p&gt;
+    &lt;section>
+    &lt;p&gt;Textstycke 3 - ej barn men ärver egenskaper från main &lt;/p&gt;
+    &lt;/section&gt;
+    &lt;/main&gt;
+</code>
+
+<p>Använd denna selektor för att styla rätt <code>ul</code>-lista!</p>
+
+--
+<div class="container">
+    <ul>
+        <li> Välj mig!
+            <ul>
+                <li> Välj inte mig </li>
+            </ul>
+        </li>
+        <li> Välj mig!</li>
+        <li> Välj mig! </li>
+        <li> Välj mig! </li>
+    </ul>
+</div>
