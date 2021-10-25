@@ -1,4 +1,4 @@
 {
     "keys": [">"],
-    "selector": ".container > ul"
+    "selector": ".container > ul > li"
 }
